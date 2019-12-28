@@ -1,0 +1,17 @@
+<nav class="site-nav">
+  <div class="site-nav-left-wrapper">
+    <div class="site-nav-left">
+
+      <div class="site-nav-content">
+        {{#if @site.navigation}}
+        <h3>{{navigation}}</h3>
+        {{/if}}
+
+      </div>
+    </div>
+  </div>
+  <div class="site-nav-right">
+    {{#if @site.secondary_navigation}}
+    {{navigation type="secondary"}}
+    {{/if}}
+</nav>

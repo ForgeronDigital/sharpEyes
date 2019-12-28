@@ -1,0 +1,32 @@
+/* class */
+.flex{
+  display: flex;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.sa{
+  justify-content: space-around;
+}
+.sb{
+  justify-content: space-between;
+}
+.column{
+  flex-direction: column;
+}
+.center{
+  align-items: center;
+  justify-content: space-around;
+}
+/* balise */
+body{
+  margin: 0;
+  background-color: white;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: initial;
+}

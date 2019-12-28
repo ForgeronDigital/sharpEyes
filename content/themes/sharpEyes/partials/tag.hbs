@@ -1,0 +1,14 @@
+{{!< default}}
+<!-- Everything inside of #tag pulls data from the tag -->
+{{#tag}}
+<header>
+  {{#if feature_image}}
+  <img src="{{feature_image}}" alt="{{name}}" />
+  {{/if}}
+</header>
+{{/tag}}
+
+
+
+<!-- Previous/next page links - displayed on every page -->
+{{pagination}}
