@@ -1,2 +1,0 @@
-# sharpEyes
-new ghost theme
