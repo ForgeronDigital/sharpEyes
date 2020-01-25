@@ -1,0 +1,40 @@
+<section class="subscribe-form">
+  <h3 class="subscribe-form-title">S'inscrire à {{@site.title}}</h3>
+  <p class="subscribe-form-description">Ayez accès aux photos en qualité maximale !</p>
+  <form data-members-form="subscribe">
+    <div class="form-group">
+      <input class="subscribe-email" id="new-sub-mail" data-members-email placeholder="youremail@example.com"
+        autocomplete="false" />
+      <button class="button primary" type="submit" id="btn-sub-mail">
+        <span class="button-content">Inscription</span>
+      </button>
+    </div>
+    <div class="message-success" id="message-success">
+      <strong>Super !</strong> Vérifiez votre boîte de réception et cliquez sur le lien pour confirmer votre
+      inscription.
+    </div>
+    <div class="message-error" id="message-error">
+      Veuillez entrer une adresse électronique valide !
+    </div>
+  </form>
+</section>
+
+<script>
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+  function startTestMail() {
+    const fail = document.getElementById("message-error")
+    const success = document.getElementById('message-success')
+    const email = document.getElementById("new-sub-mail").value;
+    if (validateEmail(email)) {
+      success.style.display = "block";
+      fail.style.display = "none";
+    } else {
+      fail.style.display = "block";
+      success.style.display = "none";
+    }
+  }
+  document.getElementById("btn-sub-mail").addEventListener("click", startTestMail);
+</script>
