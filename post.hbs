@@ -10,10 +10,10 @@
         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
           {{date format="DD MMMM YYYY"}}
         </time>
-        {{tags prefix=" on "}}
+        <strong>{{tags prefix=" on "}}</strong>
       </section>
     </header>
-    {{#if members}}
+    {{#if @member}}
     <img src="{{img_url feature_image}}" class="img-article" id="{{id}}">
     {{else}}
     <figure class="post-full-image">

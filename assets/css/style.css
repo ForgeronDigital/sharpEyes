@@ -49,20 +49,19 @@ h1,h2{
 }
 .subscribe-form{
   text-align: center;
-
   width: 400px;
   padding: 20px;
   -webkit-box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
   -moz-box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
   box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
-  margin:  20px 0;
+  margin: 20px 0;
 }
 .navbar{
   width: 100%;
   -webkit-box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
--moz-box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
-box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
-margin:  20px 0;
+  -moz-box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
+  box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74), 0px -25px 40px -19px rgba(0,0,0,0.74);
+  margin: 20px 0;
 
 }
 .post-index{
@@ -75,19 +74,26 @@ box-shadow: 0px 35px 40px -19px rgba(0,0,0,0.74);
 }
 .post-header{
   text-align: center;
+  width: 90vw;
+  margin: auto;
 }
 .img-post{
   max-width: 100%;
   display: block;
 }
 .post-content{
-  margin: 40px;
+    margin: auto;
+    width: 90vw;
+    text-align: center;
 }
 .post-date{
-  font-size: 12px;
+  font-size: 16px;
 }
 .img-article{
   width: 98vw;
+}
+.post-full-image{
+  text-align: center;
 }
 
 /* author page */
@@ -133,5 +139,14 @@ border-bottom: 3px solid black;
   }
   .redirection{
   border-bottom: 1px solid black;
+  }
+  .post-content{
+    margin: auto;
+    width: 90vw;
+  }
+  .subscribe-div{
+    width: 90vw;
+    margin: auto;
+    
   }
 }
